@@ -15,14 +15,58 @@
 
 </head>
 
-<body>
+<body class="bg-secondary">
     <!-- Header Start -->
-    <header>
-
-    </header>
+    <!-- <header>
+        <nav class="navbar navbar-dark bg-primary py-3">
+            <div class="container-fluid">
+                <h1 class="fw-bold text-light">Meal Database</h1>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header> -->
     <!-- Header End -->
     <!-- Main Section Start -->
     <main>
+        <div class="my-5">
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="search-button">
+                <button class="btn btn-primary text-light" type="button" id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="my-5">
+            <div class="container">
+                <div class="text-center" id="not-found">
+                    <p class="text-info fw-bold fs-3">Search not found</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="all-meals-section">
+                    <!-- <div class="col">
+                        <div class="card h-100">
+                            <img src="https://www.themealdb.com/images/media/meals/1520084413.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title">Fish pie</h5>
+                                    <p>category: <span class="badge bg-primary">category</span></p>
+                                </div>
+
+                                <p>Tags:
+                                    <span class="badge bg-secondary">Secondary</span>
+                                    <span class="badge bg-secondary">Secondary</span>
+                                </p>
+                                <p>Origin: <span>USA</span></p>
+                                <div class="text-end">
+                                    <button class="btn btn-primary">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
 
     </main>
     <!-- Main Section End -->
