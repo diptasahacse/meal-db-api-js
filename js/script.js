@@ -6,6 +6,7 @@ const loadDataByName = (name) => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
         .then(res => res.json())
         .then(data => loadData(data))
+        .catch(error => console.log("Something Went Worng"))
 }
 
 function loadDetail(id) {
@@ -15,6 +16,7 @@ function loadDetail(id) {
             window.location.href = `${data.meals[0].strSource}`;
             // console.log(data.meals[0].strSource)
         })
+
 
 }
 const loadData = data => {
